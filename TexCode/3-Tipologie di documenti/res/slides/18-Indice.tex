@@ -1,0 +1,23 @@
+\section{TOC}
+\begin{frame}{Indice}
+
+    Tutte le intestazioni numerate rientrano automaticamente nella \textbf{Table of Contents} (ToC), ovvero nell'indice del documento. Non è necessario stamparlo manualmente, ma se si vuole aggiungerlo basta utilizzare il comando \mintinline{latex}{\tableofcontents} nel punto desiderato (Solitamente dopo l'Abstract o il sommario).\\\\
+    Tutte le voci per la ToC sono 'registrate' ad ogni compilazione del documento, e 'stampate' alla compilazione successiva, ciò significa che la corretta creazione dell'indice nel PDF \textbf{necessita di 2 compilazioni!}
+
+\end{frame}
+
+\begin{frame}{Elenco di figure e tabelle}
+    
+    In modo equivalente alla creazione dell'indice i due comandi \mintinline{latex}{\listoffigures} e \mintinline{latex}{\listoftables} elencano automaticamente ed ordinatamente le immagini e le tabelle presenti nel documento.\\\\
+    Entrambi i comandi si comportano in modo analogo a \mintinline{latex}{\tableofcontents} e perciò richiedono 2 compilazioni di seguito.
+    
+\end{frame}
+
+\begin{frame}{Rinominare l'indice}
+
+    Per cambiare il nome all'indice è necessario sovrascrivere il comando predefinito tramite:\\
+    \mintinline{latex}{\renewcommand{\contentsname}{<nuovo nome>}} \textbf{nel preambolo} del documento.\\\\
+    Per cambiare il nome alla lista delle figure e a quella delle tabelle basta sostituire  \mintinline{latex}{\contentsname} rispettivamente con \mintinline{latex}{\listfigurename} e  \mintinline{latex}{\listtablename}.
+    
+\end{frame}
+

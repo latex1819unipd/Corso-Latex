@@ -1,0 +1,56 @@
+\documentclass[dvipsnames]{beamer}
+\input{package.tex}
+\input{res/config/config.tex}
+\usepackage{beamerthemeCourse}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{listingsutf8}
+\usepackage{listings}
+
+% ---- IMPOSTAZIONI PACCHETTI ----
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{blue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{forestgreen}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single,
+    inputencoding=utf8/latin1
+}   
+
+\title{Package, theme e template}
+\subtitle{Utilizzo di temi e modelli preimpostati per decorare il documento}
+\author{F.Fasolato, G.Zecchin, G.Santi, A.Bari}
+\date{AA 2018-2019}
+
+
+
+
+
+\begin{document}
+
+	\maketitle
+	\begin{frame}{Outline}
+        \tableofcontents
+    \end{frame}
+	\include{res/slides/1-Package}
+	\include{res/slides/2-EsempioPackage}
+	\include{res/slides/2-EsempioPackage2}
+	\include{res/slides/3-Theme}
+	\include{res/slides/4-newCommand}
+	\include{res/slides/4-1-Excercises}
+	\include{res/slides/5-Environment.tex}
+	\include{res/slides/6-Template}
+	
+
+\end{document}

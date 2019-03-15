@@ -1,0 +1,20 @@
+\begin{frame}[fragile]{Attenzione agli errori}
+
+\begin{esempio}{In questo esempio c'è un errore}
+\begin{code}
+	\inputminted[linenos] {latex} {res/examples/errore.tex}
+\end{code}
+\end{esempio}
+
+\pause
+
+\begin{alertblock}{Errore visualizzato}
+	\begin{code}
+	\begin{minted}[linenos, breaklines]{latex}
+../nomefile.tex:5: LaTeX Error: \begin{document} ended by \end{docment}. [\end{docment}]
+../nomefile.tex:5: Extra \endgroup. [\end{docment}]
+	\end{minted}
+	\end{code}
+\end{alertblock}
+
+\end{frame}

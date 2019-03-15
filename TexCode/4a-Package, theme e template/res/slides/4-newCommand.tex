@@ -1,0 +1,64 @@
+\section{Newcommand}
+\begin{frame}{Newcommand 1}
+
+
+
+Nei file di grandi dimensioni, spesso \`e necessario ripetere pi\`u volte una parola, una frase o un pezzo di codice. Per evitare Copy \& Paste inutili \LaTeX{} ha introdotto l'istruzione \mintinline{latex}{\newcommand{nome_comando}{testo visualizzato}}.
+\begin{esempio}{New command 1}
+\codedInput{res/examples/command.tex}
+
+\end{esempio}
+
+Il testo visualizzato sar\`a: $\R$.
+
+\end{frame}
+
+\begin{frame}{Newcommand 2}
+
+\mintinline{latex}{\newcommand} pu\`o accettare anche dei parametri. Grazie all'utilizzo delle parentesi quadre si pu\`o definire:
+
+
+\begin{esempio}{New command 2}
+\codedInput{res/examples/command2.tex}
+\end{esempio}
+Questo comando pu\`o essere utilizzato per vari simboli:
+\begin{itemize}
+    \item $\bb{C}$
+    \item $\bb{R}$
+    \item $\bb{Z}$
+    \item ...
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Newcommand 3}
+
+\mintinline{latex}{\newcommand} pu\`o accettare anche delle opzioni:
+
+\begin{esempio}{New command 3}
+\codedInput{res/examples/command3.tex}
+\end{esempio}
+dove:
+\begin{itemize}
+    \item[\textbf{[3]}] Rappresenta il numero di parametri
+    \item[\textbf{[2]}] \`E il valore di default del primo parametro
+    \item[\#N] Rappresenta il parametro N
+\end{itemize}
+Quindi il comando \mintinline{latex}{\plusbinomial{x}{y}} viene visualizzato come:
+\begin{center}
+    $\plusbinomial{x}{y}$
+\end{center}
+
+
+\end{frame}
+\section{Renew Command}
+\begin{frame}{Renew Command}
+
+Cos\`i come \`e possibile definire nuovi comandi \`e anche possibile ridefinire i comandi esistenti, siano essi definiti dall'utente o siano quelli di default.
+
+\begin{esempio}{Renew Command}
+\codedInput{res/examples/renew.tex}
+\end{esempio}
+Quindi il comando \mintinline{latex}{\LaTeX} ora viene visualizzato come:
+\LaTeX.
+
+\end{frame}

@@ -1,0 +1,22 @@
+
+ \frametitle{Contenuto, finalmente!}
+
+ Finalmente aggiungiamo il contenuto che vogliamo
+
+ \begin{lstlisting}[frame = single, title={File res/sections/parte1.tex}]
+\textit{Ciao mondo!}
+ \end{lstlisting}
+
+ Aggiungiamoci anche un'immagine!
+ Copiamola in \texttt{res/img/} rinominiamola con il nome \texttt{immagine}.
+Ora aggiungiamo il seguente codice al file \texttt{parte1.tex}
+
+ \begin{lstlisting}[frame = single]
+\begin{figure}[h!]
+ \centering
+ \includegraphics[scale=0.5]{res/img/immagine}
+ \caption{Un'immagine bellissima.}
+\end{figure}
+ \end{lstlisting}
+
+

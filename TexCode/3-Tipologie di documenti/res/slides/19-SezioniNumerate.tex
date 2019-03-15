@@ -1,0 +1,30 @@
+\section{Numerazione}
+\begin{frame}{Numerazione}
+    È possibile modificare la profondità della numerazione delle sezioni. Di default la profondità è impostata a 3. \\\\Se si desidera dare una numerazione solo a parti, capitoli e sezioni, escludendo sottosezioni o sotto-sottosezioni ecc., è possibile farlo tramite il comando \textbf{\\setcounter} fornendo il livello di profondità desiderato.\\\\Per esempio se vogliamo impostarlo a 1:
+    
+    \mintinline{latex}{\setcounter{secnumdepth}{1}}
+    
+\end{frame}
+    
+\begin{frame}{Numerazione (2)}
+
+    Un contatore correlato è \textbf{tocdepth}, che specifica a quale profondità mostrare i contenuti dell'indice (toc=table of contents). Può essere resettato esattamente allo stesso modo di secnumdepth. \\\\Per esempio:
+    
+    \mintinline{latex}{\setcounter{tocdepth}{3}}
+\end{frame}
+
+\begin{frame}{Numerazione (3)}
+    
+    Per evitare di numerare una sezione (o una parte o un capitolo) ed escludarla quindi anche dall'indice, basta inserire un * dopo il relativo comando, come mostrato di seguito:
+     
+    \mintinline{latex}{\subsection*{Introduction}} \\
+    
+    Tutti i comandi per la divisione del documento hanno questa versione "stellata".
+    
+\end{frame}
+
+\begin{frame}{Numerazione (4)}
+    Il comando \mintinline{latex}{\tableofcontents} normalmente mostra solo intestazioni numerate e solo fino al livello definito da \textbf{tocdepth}, ma è possibile aggiungere voci aggiuntive tramite \mintinline{latex}{\addcontentsline}. \\Ad esempio, se abbiamo inserito una sezione usando \textbf{\\section*} escludendola quindi dalla numerazione, ma vogliamo che appaia nell'indice (anche con un nome personalizzato) possiamo scrivere:\\\\
+    \mintinline{latex}{\subsection*{nome sezione}}\\
+    \mintinline{latex}{\addcontentsline{toc}{subsection}{nome in toc}}
+\end{frame}

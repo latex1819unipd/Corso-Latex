@@ -1,0 +1,43 @@
+\documentclass[dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage{beamerthemeCourse}
+\usepackage[absolute,overlay]{textpos}
+\usepackage{listings}
+\input{package}
+% ---- IMPOSTAZIONI PACCHETTI ----
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+\definecolor{mypink}{rgb}{0.858, 0.188, 0.478}
+
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{blue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{forestgreen}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+}
+\title{Tipologie di documenti}
+\subtitle{Divisione del documento e le varie tipologie}
+\author{F.Fasolato, G.Zecchin, Guido Male, A.Bari}
+\date{AA 2018-2019}
+
+\newcommand{\mbook}{\textbf{\textcolor{mypink}{book}}}
+\newcommand{\marticle}{\textbf{\textcolor{blue}{article}}}
+\newcommand{\mreport}{\textbf{\textcolor{forestgreen}{report}}}
+
+\begin{document}
+
+    \maketitle
+    \begin{frame}{Outline}
+        \tableofcontents
+    \end{frame}
+    \input{res/listOfSlides.tex}
+
+\end{document}
