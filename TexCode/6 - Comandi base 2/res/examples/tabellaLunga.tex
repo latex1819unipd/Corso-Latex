@@ -1,0 +1,16 @@
+% Serve per fare le tabelle multi-pagine!
+\usepackage{longtable}
+% Posizioniamo la tabella in centro del foglio
+\begin{center}
+\begin{longtable}{llll} % Usiamo longtable ora
+Articoli      & Identificativo & Qta \\
+Matite        & Cancelleria    & 100      \\
+Penne biro    & Cancelleria    & 120      \\
+Gomme         & Cancelleria    & 40       \\
+Gomme         & Cancelleria    & 40       \\
+Matite        & Cancelleria    & 100      \\
+Penne biro    & Cancelleria    & 120      \\
+% Notare come la caption e' dentro longtable
+\caption{Una tabella multipagina d'esempio}
+\end{longtable}
+\end{center}

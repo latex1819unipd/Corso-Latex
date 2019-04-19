@@ -1,0 +1,69 @@
+\documentclass[dvipsnames]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage[backend=biber,style=alphabetic,hyperref,backref]{biblatex}
+\input{package.tex}
+\usepackage{listings}
+% ---- IMPOSTAZIONI PACCHETTI ----
+\definecolor{forestgreen}{rgb}{0.13, 0.55, 0.13}
+
+\lstset{
+    language=[LaTeX]Tex,%C++,
+    keywordstyle=\color{blue}, %\bfseries,
+    basicstyle=\small\ttfamily,
+    commentstyle=\color{forestgreen}\ttfamily,
+    stringstyle=\rmfamily,
+    numbers=left,%
+    numberstyle=\scriptsize, %\tiny
+    stepnumber=1,
+    numbersep=8pt,
+    showstringspaces=false,
+    breaklines=true,
+    frameround=ftff,
+    frame=single
+}
+\usepackage{beamerthemeCourse}
+\usepackage[absolute,overlay]{textpos}
+\usepackage[export]{adjustbox}
+
+\newcommand{\myWiki}[2][] {
+	\href{http://en.wikipedia.org/wiki/#2}
+	{\ifthenelse{\equal{#1}{}}{http://en.wikipedia.org/wiki/#2}{#1}}
+}
+
+\newcommand{\myConcatOne}[2] {
+	#1#2
+}
+
+\newcommand{\myConcatTwo}[2][] {
+	{\ifthenelse{\equal{#1}{}}{#2}{#1#2}}
+}
+
+\bibliography{bibliografia}
+
+\title{Bibliografia e creazione dei comandi}
+\subtitle{Comandi avanzati}
+\author{F. Fasolato, G. Zecchin, Guido Storto, A. Bari}
+\date{AA 2018-2019}
+
+
+\begin{document}
+
+	\maketitle
+	\include{res/slides/1-Bibliografia}
+	\include{res/slides/2-BibliografiaManuale}
+    \include{res/slides/3-InserimentoBibliografiaManuale}
+    \include{res/slides/4-EsempioBibliografiaManuale_part1}
+    \include{res/slides/5-EsempioBibliografiaManuale_part2}
+    \include{res/slides/6-ProEControBiBliografiaManuale}
+    \include{res/slides/7-BibliografiaAutomatica}
+    \include{res/slides/8-StiliCitazione}
+    \include{res/slides/9-DatabaseOpere}
+    \include{res/slides/10-InserimentoBibliografiaAutomatica}
+    \include{res/slides/11-EsempioBibliografiaAutomatica_part1}
+    \include{res/slides/12-EsempioBibliografiaAutomatica_part2}
+    \include{res/slides/12a-Esercizio}
+    \include{res/slides/12b-Soluzione}
+    \include{res/slides/12b-Soluzione2}
+
+\end{document}

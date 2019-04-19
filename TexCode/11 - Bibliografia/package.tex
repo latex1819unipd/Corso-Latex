@@ -1,0 +1,60 @@
+\usepackage{minted}
+\usemintedstyle{friendly}
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+
+\newmintinline[inline]{latex}{}
+
+\newenvironment{code}{%
+    \begin{mdframed}[
+        linecolor=PineGreen,
+        innerrightmargin=30pt,
+        innerleftmargin=30pt,
+        backgroundcolor=black!5,
+        skipabove=10pt,
+        skipbelow=10pt,
+        splitbottomskip=6pt,
+        splittopskip=12pt
+    ]
+}{%
+\end{mdframed}
+}
+
+\newcommand{\codedInput}[1]{
+    \begin{mdframed}[
+        linecolor=PineGreen,
+        innerrightmargin=30pt,
+        innerleftmargin=30pt,
+        backgroundcolor=black!5,
+        skipabove=10pt,
+        skipbelow=10pt,
+        splitbottomskip=6pt,
+        splittopskip=12pt
+    ]
+        \inputminted[linenos, fontsize=\footnotesize]{latex}{#1}
+    \end{mdframed}
+}
+
+\newcommand{\mInput}[1]{
+   \inputminted[fontsize=\footnotesize]{latex}{#1}
+}
+
+\newenvironment{esempio}[1]{%
+    \begin{block}{Esempio: #1}
+}{%
+\end{block}
+}
+
+\newenvironment{esercizio}[1]{%
+    \setbeamercolor{block title}{bg=OliveGreen}
+    \begin{block}{#1}
+}{%
+\end{block}
+}
+
+\newenvironment{soluzione}[1]{%
+    \setbeamercolor{block title}{bg=Blue}
+    \begin{block}{#1}
+}{%
+\end{block}
+}

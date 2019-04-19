@@ -1,0 +1,55 @@
+\begin{frame}[fragile]
+\frametitle{Unit\`a di misura}
+
+\begin{table}[]
+\caption{Unit\`a di misura in \LaTeX}
+\begin{tabular}{l|llll}
+\cline{1-2}
+pt & Punto, ovvero 0.3515 mm  \\ \cline{1-2}
+mm &  Millimetro  \\ \cline{1-2}
+cm &  Centimetro  \\ \cline{1-2}
+in &  Pollice  \\ \cline{1-2}
+ex &  Altezza della "x" minuscola nel font corrente \\ \cline{1-2}
+em &  Altezza della "M" maiuscola nel font corrente \\ \cline{1-2}
+mu &  Math Unit, ovvero 1/18 em  \\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+\end{frame}
+
+
+\begin{frame}[fragile]
+\frametitle{Lengths - 1}
+
+Le Lengths sono delle unit\`a di misura della distanza relativa di alcuni elementi che costituiscono il documento. Hanno gi\`a valori di default, ma nel caso si necessiti di cambiarle, bisogna usare il comando:\newline
+
+\mintinline{latex}{\setlength{\lengthname}{value_in_specified_unit}}\newline
+
+Per esempio, la distanza fra le colonne di un documento "a due colonne" pu\`o essere fissata ad un Pollice con:\newline
+
+\mintinline{latex}{\setlength{\columnsep}{1in}}
+
+\end{frame}
+
+\begin{frame}[fragile]
+\frametitle{Lengths - 2}
+
+\begin{table}[]
+\caption{Tipologie di Lengths}
+\begin{tabular}{l|llll}
+\cline{1-2}
+\mintinline{latex}{\baselineskip} & Distanza verticale fra due righe in un paragrafo  \\ \cline{1-2}
+\mintinline{latex}{\columnsep} & Distanza orizzontale fra due colonne  \\ \cline{1-2}
+\mintinline{latex}{\columnwidth} & Larghezza di una colonna  \\ \cline{1-2}
+\mintinline{latex}{\linewidth} & Larghezza di una riga  \\ \cline{1-2}
+\mintinline{latex}{\paperwidth} & Larghezza della pagina  \\ \cline{1-2}
+\mintinline{latex}{\paperheight} & Altezza della pagina   \\ \cline{1-2}
+\mintinline{latex}{\parindent} & Indentazione del paragrafo  \\ \cline{1-2}
+\mintinline{latex}{\paperheight} & Altezza della pagina   \\ \cline{1-2}
+\mintinline{latex}{\parskip} & Spazio verticale fra paragrafi   \\ \cline{1-2}
+\mintinline{latex}{\textwidth} & Larghezza dell'area di testo nella pagina  \\ \cline{1-2}
+\mintinline{latex}{\textheight} & Altezza dell'area di testo nella pagina   \\ \cline{1-2}
+\end{tabular}
+\end{table}
+
+\end{frame}

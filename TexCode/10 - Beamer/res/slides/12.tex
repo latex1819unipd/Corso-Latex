@@ -1,0 +1,59 @@
+\subsection{Transizioni} 
+\begin{frame}
+  \frametitle{Transizioni nei cambi slide}
+  
+  Anche se in pdf, \LaTeX{} permette effetti sulle slide
+  \begin{itemize}
+    \item Abbelliscono la presentazione
+    \item La rendono meno ``pdf'' e più ``Powerpoint''
+    \item C'è la possibilità di impostare un timer automatico per l'avanzamento delle slide
+  \end{itemize}
+  
+  \begin{textblock*}{5cm}(2.5cm,1.2cm)
+    \includegraphics[scale=0.13]{arrow}
+  \end{textblock*}
+  
+  \begin{textblock*}{5cm}(5cm,6.5cm)
+    \includegraphics[scale=0.13]{SlideToSlide}
+  \end{textblock*}
+
+\end{frame}
+
+\begin{frame}[allowframebreaks]
+  \frametitle{Tabella transizioni}
+  
+  Tabella degli effetti disponibili:
+
+\tablefirsthead{\hline \textbf{Keyword}       & \textbf{Effetto}           \\}
+\tablehead{\hline \textbf{Keyword}       & \textbf{Effetto}           \\}
+
+\begin{table}[t]
+\centering
+\begin{xtabular}{|c|p{5cm}|}
+\hline
+
+\texttt{\textbackslash transblindshorizontal} & La slide successiva scorre 
+sopra quella precedente con un movimento da sinistra verso destra \\ \hline
+\texttt{\textbackslash transblindsvertical}   & La slide successiva scorre 
+sopra quella precedente con un movimento dall'alto verso il basso \\ \hline
+\texttt{\textbackslash transboxin}            & La slide precedente viene 
+``assorbita'' in un quadrato da quella nuova                       \\ \hline
+\texttt{\textbackslash transboxout}           & La slide successiva si espande 
+a forma di quadrato su quella precedente                      \\ \hline
+\end{xtabular}
+\end{table}
+\begin{table}[t]
+\centering
+\begin{xtabular}{|c|p{5cm}|}
+\hline
+\texttt{\textbackslash transdissolve}         & La slide successiva si dissolve 
+in un effetto ``pixelato''                                   \\ \hline
+\texttt{\textbackslash transwipe}             & La slide successiva esegue uno 
+``swipe'' sopra quella precedente da sinistra verso destra    \\ \hline
+\texttt{\textbackslash transfade}             & Effetto di fade tra la slide 
+precedente e quella successiva                                  \\ \hline
+\end{xtabular}
+\caption[Tabella degli effetti Beamer]{Tabella degli effetti per Beamer. Nota: solo uno di questi effetti può essere applicato per pagina. L'applicazione di due o più effetti nella stessa slide causerà un \textbf{errore} durante la compilazione.}
+\label{tab:beamer_effects}
+\end{table}
+\end{frame}

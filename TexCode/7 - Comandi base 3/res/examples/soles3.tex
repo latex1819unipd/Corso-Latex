@@ -1,0 +1,14 @@
+\AtBeginShipoutNext{ 
+ %per far coincidere l'immagine con l'inizio della pagina  
+  \AtBeginShipoutUpperLeft{
+  %per far coincidere l'immagine con il margine sinistro
+   \vtop to \paperheight{
+        \vss %vspace infinito
+        \hbox to \paperwidth{
+            \hss %hspace infinito
+            \includegraphics[scale=3]{immagine}
+        }
+    }
+  }
+}
+\null

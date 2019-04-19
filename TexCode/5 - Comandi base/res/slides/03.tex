@@ -1,0 +1,46 @@
+\begin{frame}
+ \frametitle{Personalizzazione}
+ 
+ Gli elenchi possono essere personalizzati a piacimento!
+ \begin{itemize}
+  \item[-]<1-> possiamo inserire
+  \item[/]<2-> il simbolo
+  \item[.]<3-> che più ci piace!
+ \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Personalizzazione - 2}
+ 
+Per far ciò bisogna utilizzare la seguente sintassi:
+ 
+\begin{block}{Esempio: Una lista puntata personalizzata}
+\begin{code}
+\begin{minted}[linenos]{latex}
+\begin{itemize}
+ \item[-] Primo
+ \item[/] Secondo
+ \item[.] Quinto?!?!?
+\end{itemize}
+\end{minted}
+\end{code}
+\end{block}
+ 
+Possiamo mettere ciò che vogliamo, anche frasi intere. Però 
+attenzione che parole troppo lunghe provocano effetti indesiderati.
+\end{frame}
+
+\begin{frame}
+ \frametitle{Personalizzazione - 3}
+ 
+ \begin{itemize}
+  % Intenzionale
+  \item[parole troppo lunghe] potrebbero rompere la formattazione!
+ \end{itemize}
+
+  
+ \begin{textblock*}{5cm}(7cm,5.5cm)
+   \includegraphics{broken}
+ \end{textblock*}
+\end{frame}

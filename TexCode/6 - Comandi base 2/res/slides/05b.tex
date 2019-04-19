@@ -1,0 +1,50 @@
+\begin{frame}[fragile]
+ 
+  \frametitle{Altri parametri e comandi}
+
+  Parametri e comandi ``avanzati''
+  
+  \begin{itemize}
+    \item Il parametro \inline{@{...}} specifica come separare le colonne (es. \inline{@{...}} e \inline{@{,}}.
+    \item Il comando \inline{\cline{X,Y}} inserisce una linea
+orizzontale che va dalla colonna X alla colonna Y.
+    \item Il comando \inline{\multicolumn{# colonne}} crea una cella multicolonna 
+    \item Il comando \inline{\multirow{# righe}} crea una cella multiriga
+  \end{itemize}
+
+\end{frame}
+\section{Esercizi}
+\begin{frame}
+ 
+ \frametitle{Esercizi 1/2}
+  
+  \begin{centering}
+
+  \begin{tabular}{|p{1,5cm}|l|p{2cm}|}
+   \hline
+   a & aa & aaa\\
+   \hline
+  \end{tabular}
+  \vspace{1cm}
+
+  \begin{tabular}{|c|c|c|c|}
+   \hline
+   a & aa & aaa & aaaa\\
+   \cline{2-4}
+   b & bb & bbb & bbbb\\
+   \cline{3-4}
+   c & cc & ccc & cccc\\
+   \hline
+  \end{tabular}
+  \vspace{1cm}
+
+  \begin{tabular}{l@{,}l@{}}
+   123 & 45 + \\
+   678 & 90 = \\
+   \hline
+   802 & 35
+  \end{tabular}
+
+  \end{centering}
+
+\end{frame}

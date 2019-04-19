@@ -1,0 +1,21 @@
+\documentclass{book}
+
+\begin{document}
+
+\dots{}citazione di un'opera~\cite{autore1:titolo1} bla bla bla\dots{}
+\\
+\dots{}citazione di un'opera~\cite{autore2:titolo2} bla bla bla\dots{}
+
+\cleardoublepage
+%\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+
+\begin{thebibliography}{9}
+
+\bibitem{autore1:titolo1} Cognome, Nome(1979), \emph{Titolo completo}.
+\bibitem[etichetta\_personalizzata]{autore2:titolo2} Cognome, Nome(1979),
+\emph {Titolo completo}.
+
+\end{thebibliography}
+
+\end{document}

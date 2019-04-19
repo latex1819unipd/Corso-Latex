@@ -1,0 +1,24 @@
+\begin{frame}[fragile]{Soluzione bibliografia - 1/2}
+
+\begin{soluzione}{Lista}
+    
+\begin{code}
+\begin{minted}[linenos, fontsize=\footnotesize] {latex}
+\usepackage[backend=biber,style=alphabetic,hyperref,
+            backref]{biblatex}
+\bibliography{bibliografia}
+...
+\begin{enumerate}
+\item Prima cit ~\cite{seneca}
+\item Seconda cit ~\cite{nietzsche}
+\item Terza cit ~\cite[p. 42]{abbot}
+\end{enumerate}
+\clearpage
+\printbibliography
+...
+\end{minted}
+\end{code}
+
+\end{soluzione}
+
+\end{frame}

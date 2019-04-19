@@ -1,0 +1,80 @@
+\usepackage{beamerthemeCourse}
+\usepackage{listingsutf8}
+\usepackage{listings}
+\lstset{language = Tex}
+
+\usepackage[absolute,overlay]{textpos}
+\usepackage{xtab}
+\usepackage[utf8]{inputenc}
+\usepackage{minted}
+\usemintedstyle{friendly}
+\usepackage{tikz}
+\usepackage[framemethod=TikZ]{mdframed}
+
+
+\usepackage[normalem]{ulem}
+\usepackage{numprint}       % Histoire que les chiffres soient bien
+
+\usepackage{amsmath}        % La base pour les maths
+\usepackage{amsthm}
+\usepackage{mathrsfs}       % Quelques symboles supplémentaires
+\usepackage{amssymb}        % encore des symboles.
+\usepackage{amsfonts}       % Des fontes, eg pour \mathbb.
+\usepackage{rotating}
+\usepackage{xcolor}
+
+\usepackage{minted}
+\usemintedstyle{friendly}
+
+\newenvironment{code}{
+    \begin{mdframed}[
+        linecolor=PineGreen,
+        innerrightmargin=30pt,
+        innerleftmargin=30pt,
+        backgroundcolor=black!5,
+        skipabove=10pt,
+        skipbelow=10pt,
+        splitbottomskip=6pt,
+        splittopskip=12pt
+    ]
+\end{mdframed}
+}
+
+\newcommand{\codedInput}[1]{
+    \begin{mdframed}[
+        linecolor=PineGreen,
+        innerrightmargin=30pt,
+        innerleftmargin=30pt,
+        backgroundcolor=black!5,
+        skipabove=10pt,
+        skipbelow=10pt,
+        splitbottomskip=6pt,
+        splittopskip=12pt
+    ]
+        \inputminted[linenos, fontsize=\footnotesize]{latex}{#1}
+    \end{mdframed}
+}
+
+\newcommand{\mInput}[1]{
+   \inputminted[fontsize=\footnotesize]{latex}{#1}
+}
+
+\newenvironment{esempio}[1]{%
+    \begin{block}{Esempio: #1}
+}{%
+\end{block}
+}
+
+\newenvironment{esercizio}[1]{%
+    \setbeamercolor{block title}{bg=OliveGreen}
+    \begin{block}{#1}
+}{%
+\end{block}
+}
+
+\newenvironment{soluzione}[1]{%
+    \setbeamercolor{block title}{bg=Blue}
+    \begin{block}{#1}
+}{%
+\end{block}
+}

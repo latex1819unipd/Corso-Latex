@@ -1,0 +1,39 @@
+\section{Tabelle con dimensioni fissate}
+\begin{frame}[fragile]
+  \frametitle{Tabelle con dimensioni fissate}
+  \begin{itemize}
+    \item<1-> Si utilizzano tre nuove opzioni, che rappresentano l'orientamento verticale:
+    \begin{itemize}
+      \item \inline{m{#}} - center 
+      \item \inline{p{#}} - top
+      \item \inline{b{#}} - bottom
+    \end{itemize}
+   \item<2-> Bisogna importare il pacchetto array tramite il comando \inline{\usepackage{array}}
+\texttt{}.
+  \end{itemize}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Tabelle con dimensioni fissate - 2}
+  Un'alternativa è l'environment tabu che permette di creare tabelle di dimensione da noi specificata e di avere celle di egual misura.\\
+  
+  \begin{esempio}{Esempio di tabella tabu}
+   \codedInput{res/examples/tabu.tex}
+  \end{esempio}
+
+\end{frame}
+
+\begin{frame}[fragile]
+  \frametitle{Orientamento}
+  Come già visto si può mettere il contenuto delle celle in un determinato orientamento, sia esso verticale o orizzontale. Il problema è utilizzarli entrambi! Ci sono due modi per ovviare a questo problema:
+  \begin{itemize}
+      \item Si può utilizzare multicolumn per gestire l'orientamento orizzontale all'interno della cella
+      \item Si può creare un nuovo tipo di colonna
+  \end{itemize}
+  
+  \begin{esempio}{Comandi per la creazione di nuovi tipi di colonna}
+   \codedInput{res/examples/newColumn.tex}
+  \end{esempio}
+
+\end{frame}

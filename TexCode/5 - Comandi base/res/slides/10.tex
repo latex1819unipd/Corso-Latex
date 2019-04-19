@@ -1,0 +1,22 @@
+\begin{frame}[fragile]
+ \frametitle{Orientare le pagine - 3}
+ \begin{exampleblock}{Esempio: Ruotare una pagina}
+\begin{code}
+\begin{minted}[linenos, fontsize=\footnotesize]{latex}
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{pdflscape} % Orientazione pagina
+\begin{document}
+Hey, la prossima pagina la posizioneremo orizzontalmente.
+\newpage
+% Inizia la pagina orientata orizzontalmente
+\begin{landscape}
+    % Ora la pagina e' in orizzontale!
+    Questa pagina e' invece orizzontale a quanto pare.
+\end{landscape}
+\end{document}
+\end{minted}
+  \end{code}
+ \end{exampleblock}
+
+\end{frame}

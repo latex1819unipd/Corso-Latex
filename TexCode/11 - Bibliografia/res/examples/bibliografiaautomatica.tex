@@ -1,0 +1,20 @@
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
+\usepackage{hyperref}
+\usepackage[autostyle, italian=guillemets]{csquotes}
+\usepackage[backend=biber, style=alphabetic, hyperref, backref]{biblatex}
+\addbibresource{bibliografia.bib}
+
+\begin{document}
+
+\dots{}citazione di un'opera~\cite{eco:tesi} bla bla bla\dots{}
+\\
+\dots{}citazione di un'opera~\cite{mori:tesi} bla bla bla\dots{}
+
+\cleardoublepage
+%per inserire anche i riferimenti senza citazioni
+\nocite {*}
+%equivale a dare un \ printbibliography per ogni categoria
+\printbibliography
+\end{document}

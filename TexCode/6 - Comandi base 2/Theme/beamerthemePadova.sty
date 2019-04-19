@@ -1,0 +1,42 @@
+% \ProvidesPackageRCS Padova
+
+\RequirePackage{ifthen}
+
+\newif\ifbeamerpadovanologos
+\beamerpadovanologostrue
+\DeclareOptionBeamer{nologos}{\beamerpadovanologosfalse}
+
+\DeclareOptionBeamer{compress}{\beamer@compresstrue}
+
+\ProcessOptionsBeamer
+
+\mode
+<presentation>
+{
+  \def\beamer@calltheme#1#2#3{%
+    \def\beamer@themelist{#2}
+    \@for\beamer@themename:=\beamer@themelist\do
+    {\usepackage[{#1}]{#3\beamer@themename}}}
+
+  \renewcommand\usetheme[2][]{\beamer@calltheme{#1}{#2}{beamertheme}}
+  \renewcommand\usecolortheme[2][]{\beamer@calltheme{#1}{#2}{beamercolortheme}}
+  \renewcommand\usefonttheme[2][]{\beamer@calltheme{#1}{#2}{beamerfonttheme}}
+  \renewcommand\useoutertheme[2][]{\beamer@calltheme{#1}{#2}{beameroutertheme}}
+  \renewcommand\useinnertheme[2][]{\beamer@calltheme{#1}{#2}{beamerinnertheme}}
+}
+
+% \providecommand*{\input@path}{}
+% \g@addto@macro\input@path{{../Padova/}}% append
+
+\useinnertheme{rectangles}
+\usepackage{./Theme/beamerouterthemePadova}
+\usepackage{./Theme/beamercolorthemePadova}
+\usepackage{./Theme/beamerfontthemePadova}
+
+
+
+\setbeamertemplate{navigation symbols}{}
+% \setbeamertemplate{blocks}[rounded][shadow=false]
+
+\mode
+<all>

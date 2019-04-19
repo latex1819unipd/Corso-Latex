@@ -1,0 +1,34 @@
+\section{Font families}
+
+\begin{frame}{Font families (1)}
+    
+    Di default nelle classi \LaTeX{} standard é impostato il typeface font \textbf{serif} (a.k.a. roman). Gli altri typefaces font (sans serif, monospace ecc..) posso essere applicati tramite alcuni comandi specifici:
+    
+\end{frame}    
+
+\begin{frame}{Font families (2)}
+    
+    \begin{esempio}{font families}
+           \inputminted[linenos,fontsize=\small]{latex}{res/examples/font_families.tex}
+    \end{esempio}
+    
+    \pause
+    \vspace{5mm}
+    
+    In this example command and switches are used. 
+    \texttt{A command is used to change the style 
+    of a sentence}\\
+     
+    \rmfamily
+    A switch changes the style from this point to 
+    the end of the document unless other switch is used
+    \sffamily
+
+\end{frame}
+
+\begin{frame}{Font families (3)}
+
+    É possibile impostare una font family di default per il documento \LaTeX{} utilizzando il comando:
+    \mintinline{latex}{\renewcommand{\familydefault}{\sfdefault}}
+
+\end{frame}

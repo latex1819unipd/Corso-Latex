@@ -1,0 +1,23 @@
+\begin{frame}[fragile]{Esempio bibliografia automatica - 1}
+
+\begin{esempio}{Bibliografia automatica - Preambolo, testo e inserimento}
+\begin{code}
+\begin{minted}[linenos, fontsize=\footnotesize] {latex}
+\documentclass{book}
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage[autostyle, italian=guillemets]{csquotes}
+\usepackage[backend=biber, style=alphabetic, hyperref, 
+            backref]{biblatex}
+\addbibresource{bibliografia.bib}
+\begin{document}
+\dots{}citazione di un'opera~\cite{eco:tesi} \dots{}\\
+\dots{}citazione di un'opera~\cite{mori:tesi} \dots{}
+\cleardoublepage \nocite {*}
+\printbibliography
+\end{document}
+\end{minted}
+\end{code}
+\end{esempio}
+
+\end{frame}

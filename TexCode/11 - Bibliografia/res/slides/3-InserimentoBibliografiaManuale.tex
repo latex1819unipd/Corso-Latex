@@ -1,0 +1,27 @@
+\begin{frame}[fragile]{Inserimento bibliografia manuale}
+
+\begin{textblock*}{2cm}(11cm,1.5cm)
+      \includegraphics[scale=0.15]{res/images/manual}
+\end{textblock*}
+
+Nel caso di \texttt{book} o \texttt{report}
+\begin{code}
+\begin{minted}[linenos] {latex}
+\cleardoublepage
+%\phantomsection
+\addcontentsline{toc}{chapter}{\bibname}
+\end{minted}
+\end{code}
+
+\vfill
+
+Nel caso di \texttt{article}
+\begin{code}
+\begin{minted}[linenos] {latex}
+\clearpage
+%\phantomsection
+\addcontentsline{toc}{section}{\refname}
+\end{minted}
+\end{code}
+
+\end{frame}

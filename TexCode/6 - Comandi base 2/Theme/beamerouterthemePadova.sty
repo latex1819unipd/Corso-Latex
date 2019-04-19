@@ -1,0 +1,59 @@
+\mode<presentation>
+\newcommand{\imgpath}{./Theme/images/}
+% Image definitions
+% ==============================================================================
+\pgfdeclareimage[width=\paperwidth]{titleBackground}{\imgpath bg}
+\pgfdeclareimage[width=\paperwidth]{pageBackground}{\imgpath bgWave}
+\pgfdeclareimage[width=4cm]{logoUnipd}{\imgpath unipd_logo}
+\pgfdeclareimage[width=2cm]{logoUnipdWhite}{\imgpath unipd_logo_white}
+
+
+% Actual beamer definitions
+% ==============================================================================
+
+\defbeamertemplate*{title page}{pd theme} {
+	\centering\usebeamerfont{title}\usebeamercolor[fg]{title}\inserttitle\par
+	\ifx\insertsubtitle\@empty
+	\else
+		\vskip2ex
+		{\centering\usebeamerfont{subtitle}\usebeamercolor[fg]{subtitle}\insertsubtitle\par}
+	\fi
+	\ifx\insertauthor\@empty
+	\else
+		\vskip2.5ex
+		{\raggedright\usebeamerfont{author}\usebeamercolor[fg]{author}\insertauthor\par}
+	\fi
+	\ifx\insertdate\@empty
+	\else
+		{\raggedright\usebeamerfont{date}\usebeamercolor[fg]{date}\insertdate\par}
+	\fi
+	\vfill
+}
+
+
+\defbeamertemplate*{background canvas}{pd theme} {
+	\ifnum\c@framenumber=1
+		\pgfuseimage{titleBackground}
+	\fi
+}
+
+
+\defbeamertemplate*{footline}{pd theme} {
+	\ifnum\c@framenumber=1
+		\ifbeamerpadovanologos
+			\pgftext[right,bottom,at=\pgfpoint{0.95\paperwidth}{.4cm}]{\pgfuseimage{logoUnipd}}
+		\fi
+	\else
+		\ifbeamerpadovanologos
+			\pgftext[right,bottom,at=\pgfpoint{0.97\paperwidth}{0.896\paperheight}]{\pgfuseimage{logoUnipdWhite}}
+		\fi
+		\pgftext[right,bottom,at=\pgfpoint{\paperwidth}{0cm}]{\pgfuseimage{pageBackground}}
+		\pgftext[right,bottom,at=\pgfpoint{0.98\paperwidth}{0.02\paperwidth}]{
+			\usebeamerfont{frame number in foot}
+			\usebeamercolor[fg]{frame number in foot}\insertframenumber{} di \inserttotalframenumber
+		}
+	\fi
+}
+
+\mode
+<all>

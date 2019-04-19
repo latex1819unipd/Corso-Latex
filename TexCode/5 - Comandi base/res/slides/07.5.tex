@@ -1,0 +1,38 @@
+\subsection{Indentazione e interlinea}
+
+
+\begin{frame}[fragile]
+ \frametitle{Indentazione e interlinea}
+ 
+  Ci sono due tipi di indentazione:
+  \begin{itemize}
+    \item<1-> L'indentazione orizzontale ad inizio di paragrafo viene impostata tramite il comando \inline{\setlength{\parindent}{#em}}
+    \item<2-> L'indentazione verticale dopo un paragrafo viene impostata tramite il comando \inline{\setlength{\parskip}{#em}}
+    \item<3-> L'interlinea viene impostata tramite il comando \inline{\renewcommand{\baselinestretch}{1.5}}
+  \end{itemize}
+  \vspace{5mm}
+
+ 
+ 
+%  \begin{textblock*}{5cm}(8cm,2cm)
+%   \includegraphics[scale=0.20]{space}
+%  \end{textblock*}
+ 
+\end{frame}
+
+\begin{frame}[fragile]
+ \frametitle{Paragrafi}
+ Per passare tra un paragrafo al successivo vi sono due modalità:
+ \begin{itemize}
+     \item Lasciare una riga vuota tra due blocchi di testo
+     \item Utilizzare il comando \inline{\par}
+ \end{itemize}
+ \vspace{5mm}
+ \'E possibile inserire o rimuovere l'indentazione a inizio di paragrafo tramite i comandi:
+ \begin{itemize}
+     \item \inline{\noindent} per rimuovere l'indentazione a inizio di un paragrafo
+     \item \inline{\indent} per aggiungere l'indentazione. Questo comando funziona solo se l'indentazione è stata precedentemente rimossa per l'intero documento.
+ \end{itemize}
+ 
+ 
+\end{frame}

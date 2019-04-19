@@ -1,0 +1,20 @@
+\begin{frame}[fragile]{Bibliografia automatica}
+
+È più complessa ma permette un grado di personalizzazione maggiore
+
+\vfill
+
+Per utilizzarla è necessario
+\begin{itemize}
+	\item Utilizzare il pacchetto \texttt{biblatex} al quale è possibile specificare una serie di opzioni
+	\begin{itemize}
+		\item \inline{backend=biber}
+		\item \inline{style} per definire lo stile delle citazioni
+		\item \inline{hyperref} e \inline{backref} nel caso in cui si voglia che ci siano nel documento i collegamenti tra citazione e dati bibliografici
+	\end{itemize}
+	\item importare il pacchetto per le citazioni con il comando 
+	\inline{\usepackage[autostyle,italian=guillemets]{csquotes}}
+	\item È necessario creare un \emph{database} delle opere
+\end{itemize}
+
+\end{frame}

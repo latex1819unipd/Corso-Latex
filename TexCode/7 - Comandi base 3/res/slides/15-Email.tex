@@ -1,0 +1,21 @@
+\begin{frame}[fragile]{E-mail}
+
+Il pacchetto \texttt{hyperref} non prevede alcun comando per l'inserimento di
+indirizzi di posta elettronica ma è spesso utile crearne uno da aggiungere nel
+preambolo
+
+\begin{esempio}{Comando per e-mail}
+	\begin{code}
+\begin{minted}[linenos]{latex}
+\newcommand{\mail}[1]{\href{mailto:#1}
+{\texttt{#1}}}
+	\end{minted}
+\end{code}
+\end{esempio}
+
+\begin{figure}
+	\hspace*{-7cm} 
+	\includegraphics[scale=0.25]{res/images/email}
+\end{figure}
+
+\end{frame}

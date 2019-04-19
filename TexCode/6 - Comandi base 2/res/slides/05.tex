@@ -1,0 +1,35 @@
+\section{Tabelle con bordi}
+\begin{frame}[fragile]
+ 
+  \frametitle{Bordi}
+  
+  \begin{itemize}
+   \item Per aggiungere i bordi verticali alle tabelle dobbiamo inserire 
+delle sbarrette verticali $\vert$ in \texttt{tabular}
+   \item \texttt{\textbackslash hline} per i bordi orizzontali
+  \end{itemize}
+  \begin{esempio}{Una semplice tabella con bordi}
+  \begin{code}
+  \inputminted[linenos, fontsize=\footnotesize] {latex} {res/examples/tabellaSempliceConBordi.tex}
+  \end{code}
+  \end{esempio}
+\end{frame}
+
+\begin{frame}
+ 
+ \frametitle{Bordi - Risultato}
+ 
+ \begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+Articoli      & Identificativo & Qta \\ \hline
+Matite        & Cancelleria    & 100 \\ \hline
+Penne biro    & Cancelleria    & 120 \\ \hline
+Gomme         & Cancelleria    & 40  \\ \hline
+Raccoglitori  & Ufficio        & 30  \\ \hline
+\end{tabular}
+\caption{Una tabella d'esempio}
+\end{table}
+
+\end{frame}
